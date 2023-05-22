@@ -19,3 +19,8 @@ var questionCounter = 0; //Tracks question number
 var selections = []; //Array containing user choices
 var quiz = $('#quiz'); //Quiz div object
 
+var startButton = document.querySelector("#startButton");
+
+startButton.addEventListener("click", function() {
+    
+})

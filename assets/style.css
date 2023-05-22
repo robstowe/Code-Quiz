@@ -27,7 +27,7 @@ h1 {
 
 .startButton:hover {
     background-color: rgb(211, 211, 125);
-    transition: 0.7s;
+    transition: 0.3s;
 }
 
 p {
