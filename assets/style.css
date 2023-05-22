@@ -5,7 +5,6 @@
 }
 
 h1 {
-    text-align: center;
     padding-top: 25px;
     padding-bottom: 10px;
     font-family: Arial, Helvetica, sans-serif
@@ -13,8 +12,7 @@ h1 {
 
 
 
-.button {
-    text-align: center;
+.startButton {
     background-color: blueviolet;
     color: white;
     border: none;
@@ -27,7 +25,7 @@ h1 {
     font-size: 20px;
 }
 
-.button:hover {
+.startButton:hover {
     background-color: rgb(211, 211, 125);
     transition: 0.7s;
 }
@@ -37,6 +35,12 @@ p {
     font-family: Arial, Helvetica, sans-serif
 }
 
+/* why isnt border or border color working for this segment? */
+.hiscores {
+    border: 3px;
+    border-color: black;
+
+}
 
 
 img {
