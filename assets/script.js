@@ -4,11 +4,11 @@ var questions = [{
   correctAnswer: "It's a system used to add text files, graphics and links to webpages"
 }, {
   title: "What is CSS used for?",
-  choices: ["To add style and design to webpages", "Cranky, Sluthy, Salamanders", "Idk man, I just work here."],
+  choices: ["To add style and design to webpages", "Cranky, Sluthy, Salamanders", "Idk man, I just work here.", "example add this in later"],
   correctAnswer: 0
 }, {
   title: "What does Javascript do?",
-  choices: ["It's a coffee maker, duh.", "Sir, this is a Wendy's.", "It's a programming language that allows you to make webpages interactive"],
+  choices: ["It's a coffee maker, duh.", "Sir, this is a Wendy's.", "It's a programming language that allows you to make webpages interactive", "example add this in later"],
   correctAnswer: 2
 }];
 let questionIndex = 0
