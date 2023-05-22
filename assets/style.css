@@ -12,7 +12,7 @@ h1 {
 
 
 
-.startButton {
+.start-button {
     background-color: blueviolet;
     color: white;
     border: none;
@@ -25,7 +25,7 @@ h1 {
     font-size: 20px;
 }
 
-.startButton:hover {
+.start-button:hover {
     background-color: rgb(211, 211, 125);
     transition: 0.3s;
 }
@@ -48,4 +48,16 @@ img {
     bottom:0px;
     right:0px;
     z-index: -1;
+}
+
+.hidden {
+    display: none;
+}
+
+.reveal {
+    display: block;
+}
+
+.question-box {
+    
 }

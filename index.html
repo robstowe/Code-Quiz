@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,18 +8,30 @@
     <link rel="stylesheet" href="./assets/style.css">
     <title>Coding Quiz Challenge</title>
 </head>
+
 <body>
-    <h1 a="title">Quiz Challenge</h1>
-    <img src="./assets/images/tony.jpg" alt="Tony Soprano">
-        <p>Try to answer of all the following code related questions! Track your score, and compare where you stack on the hiscores after you have finished!</p>
+    <div id="start-screen">
+        <h1 a="title">Quiz Challenge</h1>
+        <img src="./assets/images/tony.jpg" alt="Tony Soprano">
+        <p>Try to answer of all the following code related questions! Track your score, and compare where you stack on
+            the hiscores after you have finished!</p>
         <p>Don't disapoint Tony, or else you may have had your last gabagool..</p>
-    <button type="button" id="startButton" class="startButton"><a href="#"></a><strong></a>Begin Quiz</strong></button>
-    <button type="button" class="nextButton"><a href="#"></a><strong>Next</strong></button>
+        <button type="button" id="start-button" class="start-button"><a href="#"></a><strong></a>Begin
+                Quiz</strong></button>
+    </div>
+    <div id="question-screen">
+        <h2 id="title">Test</h2>
+        <div id="choices"></div>
+    </div>
+    <div id="end-screen">
+        <h2>Example Text</h2>
+    </div>    
     <section type="hiscores" class="hiscores">
-        Wins:<span  id="wins"> 0</span> 
-        Losses:<span  id="losses"> 0</span> 
-       <span  id="timer">Timer</span> 
+        Wins:<span id="wins"> 0</span>
+        Losses:<span id="losses"> 0</span>
+        <span id="timer">Timer</span>
     </section>
     <script src="./assets/script.js"></script>
 </body>
+
 </html>
