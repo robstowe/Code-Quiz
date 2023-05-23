@@ -46,29 +46,18 @@ function generateQuestions() {
     let tempBtn = document.createElement("button"); //creates a vanilla button
     tempBtn.textContent=currentQuestion.choices[i]; //changes the text thats on the button. [i] makes 4 buttons, for the choices in Question 1
     tempBtn.setAttribute('class', 'question-box'); //addinng a class, and need to set this up with the fancy class in CSS (update formatting there)
-    tempBtn.onclick=validateAnswer //run the validateAnswer function
+    tempBtn.onclick=validateAnswer//run the validateAnswer function
     choicesEl.appendChild(tempBtn) //we are appending this to the Dom
     //i need to figure out how to empty the first question after answering
-
-    
-    
-    
-// right now this shows the first question, and only the first answer choice
-    // if ('click') {
-    //   hide(questions[0], choices[0]);
-    // }
-      
-    
+    choicesEl[0].setAttribute('class', 'hidden');
   }
 }
-
 
 function validateAnswer() {
   console.log("clicked"); //we want to increment the question index
   questionIndex++;
   generateQuestions();
 };
-
 
 
 
