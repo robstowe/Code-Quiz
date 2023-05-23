@@ -5,13 +5,15 @@ var questions = [{
 }, {
   title: "What is CSS used for?",
   choices: ["To add style and design to webpages", "Cranky, Sluthy, Salamanders", "Idk man, I just work here.", "example add this in later"],
-  correctAnswer: 0
+  correctAnswer: "To add style and design to webpages"
 }, {
   title: "What does Javascript do?",
-  choices: ["It's a coffee maker, duh.", "Sir, this is a Wendy's.", "It's a programming language that allows you to make webpages interactive", "example add this in later"],
-  correctAnswer: 2
+  choices: ["It's a coffee maker, duh.", "Sir, this is a Wendy's.", "To add style and design to webpages", "example add this in later"],
+  correctAnswer: "To add style and design to webpages"
 }];
-let questionIndex = 0
+let questionIndex = 0;
+let choicesIndex = 0;
+
 // importing elements
 
 let startScreenEl = document.querySelector('#start-screen');
@@ -20,11 +22,13 @@ let startEndEL = document.querySelector('#end-screen');
 let startBtn = document.querySelector('#start-button');
 let titleEl = document.querySelector('#title');
 let choicesEl = document.querySelector('#choices');
+let timerEl = document.querySelector('#timer');
 
 //adding the class hidden from the CSS file to this element
 startScreenEl.setAttribute('class', 'reveal');
 startQuestionEl.setAttribute('class', 'hidden');
 startEndEL.setAttribute('class', 'hidden');
+timerEl.setAttribute('class', 'countdown');
 
 function startQuiz() {
   startScreenEl.setAttribute('class', 'hidden');
@@ -45,8 +49,19 @@ function generateQuestions() {
     tempBtn.onclick=validateAnswer //run the validateAnswer function
     choicesEl.appendChild(tempBtn) //we are appending this to the Dom
     //i need to figure out how to empty the first question after answering
+
+    
+    
+    
+// right now this shows the first question, and only the first answer choice
+    // if ('click') {
+    //   hide(questions[0], choices[0]);
+    // }
+      
+    
   }
 }
+
 
 function validateAnswer() {
   console.log("clicked"); //we want to increment the question index
