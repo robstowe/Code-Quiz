@@ -74,6 +74,12 @@ img {
     
 }
 
+.question-box:hover {
+    background-color: rgb(211, 211, 125);
+    transition: 0.3s;
+}
+
+
 .countdown {
     color: black;
     border: none;

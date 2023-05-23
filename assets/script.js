@@ -12,7 +12,6 @@ var questions = [{
   correctAnswer: "To add style and design to webpages"
 }];
 let questionIndex = 0;
-let choicesIndex = 0;
 
 // importing elements
 
@@ -36,21 +35,28 @@ function startQuiz() {
   generateQuestions();
 };
 
+function endQuiz() {
+  if (generateQuestions());
+  startEndEL.setAttribute('class', 'reveal');
+};
+
 function generateQuestions() {
   let currentQuestion = questions[questionIndex]
   // changing the text of our title element. 
   // we are also storing the above questionIndex, to call that above variables being dynamic
-  titleEl.textContent=currentQuestion.title // changing the title
+  titleEl.textContent = currentQuestion.title // changing the title
   //now we need the 4 buttons, so we create a 4 loop
+  choicesEl.innerHTML = "";
+
   for (let i = 0; i < 4; i++) { // this loops 4 times 
     let tempBtn = document.createElement("button"); //creates a vanilla button
-    tempBtn.textContent=currentQuestion.choices[i]; //changes the text thats on the button. [i] makes 4 buttons, for the choices in Question 1
+    tempBtn.textContent = currentQuestion.choices[i]; //changes the text thats on the button. [i] makes 4 buttons, for the choices in Question 1
     tempBtn.setAttribute('class', 'question-box'); //addinng a class, and need to set this up with the fancy class in CSS (update formatting there)
-    tempBtn.onclick=validateAnswer//run the validateAnswer function
+    tempBtn.onclick = validateAnswer//run the validateAnswer function
     choicesEl.appendChild(tempBtn) //we are appending this to the Dom
     //i need to figure out how to empty the first question after answering
-    choicesEl[0].setAttribute('class', 'hidden');
   }
+  startEndEL
 }
 
 function validateAnswer() {
@@ -62,5 +68,7 @@ function validateAnswer() {
 
 
 var startButton = document.querySelector("#startButton");
+var endButton = document.querySelector('#end-screen');
 
-startBtn.onclick=startQuiz;
+startBtn.onclick = startQuiz;
+
