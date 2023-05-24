@@ -1,6 +1,5 @@
 :root {
-    margin-left: 300px;
-    margin-right: 300px;
+
     text-align: center;
 }
 
@@ -35,13 +34,6 @@ p {
     font-family: Arial, Helvetica, sans-serif
 }
 
-/* why isnt border or border color working for this segment? */
-.hiscores {
-    border: 3px;
-    border-color: black;
-
-}
-
 
 img {
     position:fixed;
@@ -60,10 +52,12 @@ img {
 
 .question-box {
     background-color: blueviolet;
-    display: block;
+    display: grid;
+    grid-row: auto;
     text-align: center;
     color: white;
     border: none;
+    margin-left: 25%;
     margin-bottom: 10px;
     border-radius: 10px;
     box-shadow: 0px 0px 2px 2px rgb(0,0,0);
@@ -104,4 +98,18 @@ img {
     font-family: Arial, Helvetica, sans-serif;
     border: 3px;
     color: black;
+}
+
+.hiscores p{
+    font-size: 20px;
+    display: grid ;
+    font-family: Arial, Helvetica, sans-serif;
+    width: auto;
+    border: 5px solid blueviolet;
+    border-radius: 10px;
+    padding: 5px;
+    margin-left: 40%;
+    margin-right: 40%;
+    color: white;
+    background-color: black;
 }
