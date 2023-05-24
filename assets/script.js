@@ -1,14 +1,14 @@
 var questions = [{
   title: "What is HTML used for?",
-  choices: ["Pokemon Power Ups", "It's a system used to add text files, graphics and links to webpages", "Quickly searching for the answer in Google...", "example add this in later"],
+  choices: ["Pokemon Power Ups", "It's a system used to add text files, graphics and links to webpages", "Quickly searching for the answer in Google...", "Trees, ducks. What the --- are you, Ranger Rick?"],
   correctAnswer: "It's a system used to add text files, graphics and links to webpages"
 }, {
   title: "What is CSS used for?",
-  choices: ["To add style and design to webpages", "Cranky, Sluthy, Salamanders", "Idk man, I just work here.", "example add this in later"],
+  choices: ["To add style and design to webpages", "Cranky, Sluthy, Salamanders", "Idk man, I just work here.", "All this from a slice of gabagool?"],
   correctAnswer: "To add style and design to webpages"
 }, {
   title: "What does Javascript do?",
-  choices: ["It's a coffee maker, duh.", "Sir, this is a Wendy's.", "Adds functionality to websites", "example add this in later"],
+  choices: ["It's a coffee maker, duh.", "Sir, this is a Wendy's.", "Adds functionality to websites", "Your mother was working the bonbon concession at the Eiffel Tower."],
   correctAnswer: "Adds functionality to websites"
 }];
 let questionIndex = 0;
