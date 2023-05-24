@@ -14,7 +14,6 @@ var questions = [{
 let questionIndex = 0;
 
 // importing elements
-
 let startScreenEl = document.querySelector('#start-screen');
 let startQuestionEl = document.querySelector('#question-screen');
 let startEndEL = document.querySelector('#end-screen');
@@ -25,6 +24,7 @@ let timerEl = document.querySelector('#timer');
 let timer;
 let timerCount;
 let quizScore = 0;
+
 
 //adding the class hidden from the CSS file to this element
 startScreenEl.setAttribute('class', 'reveal');
